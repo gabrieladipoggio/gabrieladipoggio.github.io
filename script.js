@@ -5,4 +5,30 @@ var arrow = document.querySelector('.arrow')
      this.classList.toggle('animate__bounce')
     }
 );
-          
+
+
+
+
+var i = 0;
+var txt = '<Gabriela Di Poggio>';
+var speed = 150;
+
+function typeWriter() {
+  if (i < txt.length) {
+    if (i == 0){
+      document.getElementById("left-bracket").innerHTML += txt.charAt(i);
+    }
+    else if (i == txt.length-1) {
+      document.getElementById("right-bracket").innerHTML += txt.charAt(i);
+    }
+    else{
+      document.getElementById("name").innerHTML += txt.charAt(i);
+    }
+    i++;
+    window.setTimeout(typeWriter, speed);
+  }
+  else{
+    document.getElementById('blink').style.color="#646464"
+  }
+
+}

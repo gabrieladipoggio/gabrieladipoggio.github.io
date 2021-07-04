@@ -24,11 +24,9 @@ a {
 
 main {
   display: flex;
-  justify-content: space-evenly;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 60px;
-  text-transform:uppercase;
   color: var(--textColor);
   padding-right: .5em;
 }
@@ -42,25 +40,34 @@ main {
 
 .photo{
   box-shadow: -20px -20px #41BEB7;
+  margin-left: 2em;
 }
 
+.wrapper {
+  margin-left: 1.5em;
+  display: inline-block;
+}
 
-.gabi {
+.name-wrapper{
+  display: flex;
+}
+
+.name {
   font-weight: 800;
-  display: inline;
   color: var(--mainColor);
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  width: 100%;
-  /* animation: 
-    blink-caret .5s step-end infinite;
-  animation-delay: 2s; 
-    border-right: 2px solid var(--textColor);
-*/
-  
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+
 }
 
+.blink{
+  animation: 
+    blink-caret .5s step-end infinite;
+  display: inline-block;
+  animation-delay: 3.5s;
+  color: transparent;
+  left: -50px
+}
 
 .small-text, .scroll{
   font-family: 'Roboto Mono', monospace;
@@ -72,8 +79,6 @@ main {
 
 .small-text{
   position: relative;
-  top: -20px;
-
 }
 
 .scroll {
@@ -107,9 +112,10 @@ font-size:12px;
 
 
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--textColor) }
+    from, to { color: var(--textColor)}
+    50% {color: transparent  }
   }
+  
 
   .animate__animated.animate__fadeInLeft {
     --animate-duration: 3s;

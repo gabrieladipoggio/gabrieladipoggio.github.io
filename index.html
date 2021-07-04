@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Gabriela Di Poggio | Front-End Developer</title>
 </head>
-<body>
+<body onload="typeWriter()">
     <header>
         <a href="https://www.linkedin.com/in/gabriela-di-poggio" target="_blank">
             <img src="./img/linkedin-logo.png" alt="LinkedIn Logo">
@@ -25,9 +25,17 @@
     </header>
 
     <main>
-        <div class="animate__animated animate__fadeInLeft"><img src="./img/profile-pic.png" class="photo"></div>
-
-        <div class="intro">Hello<br>my name is<br><div class="gabi">Gabi</div>
+        <div><img src="./img/profile-pic.png" class="photo"></div>
+        
+        <div class="wrapper">
+            <div class="intro">Hello<br>my name is<br>
+                <div class="name-wrapper">
+                    <div id="left-bracket" class="left-bracket"></div>
+                    <div id="name" class="name"></div>
+                    <div id="right-bracket" class="right-bracket"></div>
+                    <div class="blink" id="blink">_</div>
+                </div>
+        </div>
         <div class="small-text">I am a front-end developer with a passion for design.</div>
         </div>
         <div class="scroll">(Scroll down to explore)<br><img src="./img/arrow-down.png" alt="Arrow Down Icon" class="arrow" id="arrow"></div>
@@ -45,3 +53,4 @@
 
 <script src="./script.js"></script>
 
+<!-- class="animate__animated animate__fadeInLeft" -->
