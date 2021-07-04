@@ -6,7 +6,7 @@ var arrow = document.querySelector('.arrow')
     }
 );
 
-
+console.log("Version 2.0")
 
 
 var i = 0;
