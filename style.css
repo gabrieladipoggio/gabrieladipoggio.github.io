@@ -32,32 +32,42 @@ main {
 }
 
 .intro{
-  padding-top: 1.5em;
+  padding-top: 6.5em;
+  padding-bottom: .2em;
   line-height: 1.2em;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 24px;
+  font-weight: 400;
+  align-self: center;
 }
-
-
 
 .photo{
   box-shadow: -20px -20px #41BEB7;
   margin-left: 2em;
 }
 
+
 .wrapper {
   margin-left: 1.5em;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .name-wrapper{
   display: flex;
+  
 }
+
 
 .name {
   font-weight: 800;
   color: var(--mainColor);
   display: inline-block;
-  font-family: 'Inter', sans-serif;
+}
 
+.left-bracket, .right-bracket, .blink{
+  font-weight: 200;
 }
 
 .blink{
@@ -71,15 +81,14 @@ main {
 
 .small-text, .scroll{
   font-family: 'Roboto Mono', monospace;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: none;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--textColor);
+  text-align: center;
+  padding-top: 10px;
 }
 
-.small-text{
-  position: relative;
-}
 
 .scroll {
 display: flex;
