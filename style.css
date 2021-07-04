@@ -1,0 +1,116 @@
+
+body{
+  background-image: url(/img/background-texture.png);
+  background-color: #c4c4c462;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vh;
+  --mainColor: #41BEB7;
+  --textColor:#646464;
+}
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 2em;
+  padding-top: 1.5em;
+  position: relative;
+  left: 80%;
+  opacity: 80%;
+}
+
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  text-transform:uppercase;
+  color: var(--textColor);
+  padding-right: .5em;
+}
+
+.intro{
+  padding-top: 1.5em;
+  line-height: 1.2em;
+}
+
+
+
+.photo{
+  box-shadow: -20px -20px #41BEB7;
+}
+
+
+.gabi {
+  font-weight: 800;
+  display: inline;
+  color: var(--mainColor);
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 100%;
+  /* animation: 
+    blink-caret .5s step-end infinite;
+  animation-delay: 2s; 
+    border-right: 2px solid var(--textColor);
+*/
+  
+}
+
+
+.small-text, .scroll{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 300;
+  color: var(--textColor);
+}
+
+.small-text{
+  position: relative;
+  top: -20px;
+
+}
+
+.scroll {
+display: flex;
+flex-direction: column;
+position: absolute;
+left: 65%;
+top: 87%;
+font-size:12px;
+}
+
+.arrow {
+  align-self: center;
+  padding-top: 1.5em;
+  width: 25px;
+}
+
+.skills, .about{
+  background-color: #fff;
+  float: left;  
+  position: relative;
+  top: -50px;
+  z-index: -1;
+  height: 100vh;
+  width: 50%;
+}
+
+.about {
+  float:right;
+}
+
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--textColor) }
+  }
+
+  .animate__animated.animate__fadeInLeft {
+    --animate-duration: 3s;
+  }
