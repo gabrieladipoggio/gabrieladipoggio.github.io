@@ -1,15 +1,16 @@
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
   background-image: url(/img/background-texture.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 10vh;
   --mainColor: #41BEB7;
   --textColor:#8F8F8F;
+  
 }
 
 
@@ -139,7 +140,7 @@ font-size:12px;
   position: relative;
   top: -50px;
   z-index: -1;
-  height: 90vh;
+  height:35em;
   width: 50%;
 }
 
@@ -148,7 +149,7 @@ font-size:12px;
 
 }
 
-.skills{
+.skills, .projects-title{
   color: var(--mainColor);
   font-family: 'Inter', sans-serif;
   font-size: 36px;
@@ -208,7 +209,7 @@ font-size:12px;
   padding-bottom: 1.5em;
 }
 
-h2 {
+.about-title {
   color: var(--textColor);
   font-family: 'Roboto Mono', monospace;
   font-size: 24px;
@@ -249,6 +250,18 @@ p {
 
 .social-links:hover{
   color: #333333;
+}
+
+.projects{
+  background: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-title{
+  margin: 2em auto;
 }
 
 

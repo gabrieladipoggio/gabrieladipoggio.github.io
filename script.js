@@ -6,9 +6,10 @@ var arrow = document.querySelector('.arrow')
     }
 );
 
-console.log("Version 2.0");
+console.log("Version 3.0");
 
 AOS.init();
+
 
 
 var i = 0;
