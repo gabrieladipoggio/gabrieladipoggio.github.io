@@ -11,17 +11,20 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Gabriela Di Poggio | Front-End Developer</title>
 </head>
 <body onload="typeWriter()">
     <header>
-        <a href="https://www.linkedin.com/in/gabriela-di-poggio" target="_blank">
-            <img src="./img/linkedin-logo.png" alt="LinkedIn Logo" class="linkedin-logo">
-        </a>
-        <a href="https://github.com/gabrieladipoggio" target="_blank">
-            <img src="./img/github-logo.png" alt="GitHub Logo" class="github-logo">
-        </a>
+        <div class="link-wrapper">
+            <a href="https://www.linkedin.com/in/gabriela-di-poggio" target="_blank" class="header-links">
+                <img src="./img/linkedin-logo.png" alt="LinkedIn Logo" class="linkedin-logo">
+            </a>
+            <a href="https://github.com/gabrieladipoggio" target="_blank" class="header-links">
+                <img src="./img/github-logo.png" alt="GitHub Logo" class="github-logo">
+            </a>
+        </div>
     </header>
 
     <main>
@@ -36,15 +39,19 @@
                     <div class="blink" id="blink">_</div>
                 </div>
                 <div class="small-text">I make websites.</div>
-            </div>
-            <div class="scroll-wrapper">
-                <div class="scroll">(Scroll down to explore)<br><img src="./img/arrow-down.png" alt="Arrow Down Icon" class="arrow" id="arrow"></div>
+                <div class="scroll-wrapper">
+                    <div class="scroll">(Scroll down to explore)<br>
+                    <a href="#skills "><img src="./img/arrow-down.png" alt="Arrow Down Icon" class="arrow" id="arrow"></a>    
+                    </div>
+                </div>
             </div>
     </main>
-    <section class="container"> 
+    <section class="container" id="skills"> 
         <div class="skills-wrapper">
-            <div class="skills">
-                Skills
+            <div class="skills" 
+                data-aos="fade-right"
+                data-aos-duration="2500">
+                                Skills
                 <div class="text-decoration"></div>
             </div>
             <div class="icons">
@@ -61,19 +68,28 @@
                 <img src="./icons/photoshop.png" alt="Photoshop Icon" class="icon">
                 <img src="./icons/illustrator.png" alt="Illustrator Icon" class="icon">
                 <img src="./icons/vue.png" alt="VueJS Icon" class="icon">
-                
+                <div class="end-scroll"></div>
             </div>
         </div>
-
-
     </section>
     <section class="container">
-
+        <div class="about-wrapper">
+            <img src="./img/computer-icon.png" class="computer-icon">
+             <h2>A litte bit about me</h2>
+            <p>A little bit more about me about me about me about me about me about me about me about me about me about me about me about me about me about meabout me about me about me about me about me about meabout meabout me about me about me about me about </p>
+            <div class="links">
+                <a href="http://" target="_blank" class="social-links">LinkedIn</a>|<a href="http://" target="_blank" class="social-links">Dribbble</a>|<a href="http://" target="_blank" class="social-links">GitHub</a> 
+            </div>
+        </div>
     </section>
 
 </body>
 </html>
-
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./script.js"></script>
 
-<!-- class="animate__animated animate__fadeInLeft" -->
+  

@@ -1,4 +1,8 @@
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   background-image: url(/img/background-texture.png);
   background-repeat: no-repeat;
@@ -9,7 +13,7 @@ body{
 }
 
 
-a {
+.header-links {
   text-decoration: none;
   display: inline-block;
   vertical-align: middle;
@@ -17,7 +21,7 @@ a {
   padding-top: 3em;
   padding-bottom: 5em;
   position: relative;
-  left: 80%;
+  left: 76%;
   opacity: 80%;
 
 }
@@ -46,7 +50,7 @@ main {
   display: flex;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 60px;
+  font-size: 52px;
   color: var(--textColor);
   
 }
@@ -56,7 +60,7 @@ main {
   padding-bottom: .2em;
   line-height: 1.2em;
   font-family: 'Roboto Mono', monospace;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   align-self: center;
   text-transform: uppercase;
@@ -65,7 +69,7 @@ main {
 
 .photo{
   box-shadow: -20px -20px var(--mainColor);
-  margin-left: 3em;
+  margin-left: 2.5em;
 }
 
 
@@ -75,7 +79,6 @@ main {
   width: 50%;
   align-content: center;
   margin: 0 auto;
-  margin-left:1.3em;
   
 }
 
@@ -105,6 +108,7 @@ main {
 
 .scroll-wrapper{
   margin: 0 auto;
+  padding-top: 2.5em;
 }
 
 .small-text, .scroll{
@@ -115,17 +119,11 @@ main {
   color: var(--textColor);
   text-align: center;
   padding-top: 10px;
-  margin: 0 auto;
-
 }
 
 
 .scroll {
-display: flex;
 flex-direction: column;
-position: absolute;
-left: 65%;
-top: 87%;
 font-size:12px;
 }
 
@@ -141,7 +139,7 @@ font-size:12px;
   position: relative;
   top: -50px;
   z-index: -1;
-  height: 100vh;
+  height: 90vh;
   width: 50%;
 }
 
@@ -191,6 +189,66 @@ font-size:12px;
 
 .about {
   float:right;
+}
+
+.about-wrapper{
+  padding-top:8em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 8em;
+}
+
+.computer-icon{
+  width: 100px;
+  align-self: center;
+  padding-bottom: 1.5em;
+}
+
+h2 {
+  color: var(--textColor);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: .5em;
+
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  color: var(--textColor);
+  width: 80%;
+  align-self: center;
+  margin-bottom: 1.2em;
+  font-weight: 300;
+
+
+}
+
+.links{
+  text-align: center;
+  width: 50%;
+  align-self: center;
+  background-color: #E0E0E0;
+  padding: 10px 0;
+  color: #8F8F8F;
+}
+
+.social-links{
+  text-decoration: none;
+  color: #8F8F8F;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.social-links:hover{
+  color: #333333;
 }
 
 

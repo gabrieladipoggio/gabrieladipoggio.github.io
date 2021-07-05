@@ -6,7 +6,9 @@ var arrow = document.querySelector('.arrow')
     }
 );
 
-console.log("Version 2.0")
+console.log("Version 2.0");
+
+AOS.init();
 
 
 var i = 0;
@@ -32,3 +34,20 @@ function typeWriter() {
   }
 
 }
+
+
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+
