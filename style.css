@@ -98,6 +98,12 @@ main {
   font-weight: 200;
 }
 
+.bracket-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .blink{
   animation: 
     blink-caret .5s step-end infinite;
@@ -339,7 +345,7 @@ p {
 
       main {
         font-size: 48px;
-        height: 80vh;
+        height: 90vh;
       }
 
       .intro{
