@@ -6,7 +6,7 @@ var arrow = document.querySelector('.arrow')
     }
 );
 
-console.log("Version 3.0");
+console.log("Version 2.1");
 
 AOS.init();
 

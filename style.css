@@ -333,6 +333,9 @@ p {
       .photo{
         display: none;
       }
+      .wrapper{
+        padding-top: 1.5em;
+      }
 
       main {
         font-size: 48px;
@@ -351,10 +354,10 @@ p {
         width: 100%;
         float: none;  
         top: -50px;
-        height:65vh;
+        height:100%;
       }
       .scroll-wrapper{
-        padding-top: 2em;
+        padding-top: 2.5em;
       }
 
       .icon{
@@ -364,11 +367,12 @@ p {
 
     .skills-wrapper{
       padding-top:3em;
-      padding-bottom: 0;
+      padding-bottom: 4.5em;
     }
 
     .about-wrapper{
       padding-top: 4em;
+      padding-bottom: 4em;
   
     }
     .about {
