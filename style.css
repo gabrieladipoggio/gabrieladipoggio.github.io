@@ -198,7 +198,7 @@ font-size:12px;
 }
 
 .about-wrapper{
-  padding-top:2.5rem;
+  padding-top:3.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -336,7 +336,7 @@ p {
 
       main {
         font-size: 48px;
-        height: 110vh;
+        height: 80vh;
       }
 
       .intro{
@@ -351,7 +351,7 @@ p {
         width: 100%;
         float: none;  
         top: -50px;
-        height:100vh;
+        height:65vh;
       }
       .scroll-wrapper{
         padding-top: 2em;
