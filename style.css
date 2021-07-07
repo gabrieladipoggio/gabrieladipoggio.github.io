@@ -2,15 +2,16 @@
 html{
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100%;
+  
 }
 
 body{
   background-image: url(/img/background-texture.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   --mainColor: #41BEB7;
   --textColor:#8F8F8F;
-  
 }
 
 
@@ -53,7 +54,6 @@ main {
   font-weight: 600;
   font-size: 52px;
   color: var(--textColor);
-  
 }
 
 .intro{
@@ -149,7 +149,7 @@ font-size:12px;
 
 }
 
-.skills, .projects-title{
+.skills, .projects-title, .about{
   color: var(--mainColor);
   font-family: 'Inter', sans-serif;
   font-size: 36px;
@@ -158,6 +158,11 @@ font-size:12px;
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.about {
+  visibility: hidden;
+  float: left;
 }
 
 .text-decoration{
@@ -193,14 +198,13 @@ font-size:12px;
 }
 
 .about-wrapper{
-  padding-top:8em;
+  padding-top:2.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0 auto;
   text-align: center;
-  padding-right: 8em;
 }
 
 .computer-icon{
@@ -230,22 +234,21 @@ p {
 
 }
 
-.links{
-  text-align: center;
-  width: 50%;
-  align-self: center;
-  background-color: #E0E0E0;
-  padding: 10px 0;
+ .links{
+  text-decoration:none;
   color: #8F8F8F;
-}
+  padding-left: 5px;
+  padding-right: 5px;
+} 
 
 .social-links{
-  text-decoration: none;
-  color: #8F8F8F;
+  align-self: center;
   font-family: 'Roboto Mono', monospace;
   font-size: 16px;
   margin-right: 10px;
   margin-left: 10px;
+  background-color: #e0e0e0;
+  padding:5px 30px 5px 30px ;
 }
 
 .social-links:hover{
@@ -274,3 +277,102 @@ p {
   .animate__animated.animate__fadeInLeft {
     --animate-duration: 3s;
   }
+
+  @media screen and (min-width: 768px) and (max-width:1130px) {
+    p{
+      color: red;
+    }
+    .header-links{
+      left:73%
+    }
+
+    .name-wrapper{
+      margin-left: 1em;
+      display:flex;
+    
+    }
+
+    .name, .right-bracket, .left-bracket{
+      display: flex;
+    }
+
+
+    main {
+      height: 110vh;
+    }
+    .photo{
+      width: 70%;
+    }
+
+    .photo-wrapper{
+      padding-top: 1em;
+    }
+    .icon{
+      flex-wrap: nowrap;
+    }
+
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width:1047px){
+
+    .icons{
+      padding-top:1.5rem
+    }
+    .icon{
+      flex-wrap: nowrap;
+      height: 53px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+      p{
+        color:blue;
+      }
+
+      .photo{
+        display: none;
+      }
+
+      main {
+        font-size: 48px;
+        height: 110vh;
+      }
+
+      .intro{
+        font-size: 18px;
+      }
+     
+      .header-links {
+        display: none;
+      }
+
+      .container{
+        width: 100%;
+        float: none;  
+        top: -50px;
+        height:100vh;
+      }
+      .scroll-wrapper{
+        padding-top: 2em;
+      }
+
+      .icon{
+        width:auto;
+        height: 60px;
+  }
+
+    .skills-wrapper{
+      padding-top:3em;
+      padding-bottom: 0;
+    }
+
+    .about-wrapper{
+      padding-top: 4em;
+  
+    }
+    .about {
+      visibility: visible;
+    }
+
+}
